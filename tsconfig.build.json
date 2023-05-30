@@ -1,0 +1,17 @@
+{
+    "extends": "./tsconfig.json",
+    "exclude": [
+        ".storybook/**/*",
+        ".eslintrc.cjs",
+        "./tailwind.config.ts",
+        "test/**/*",
+        "src/**/__snapshots__",
+        "src/tailwind.preset.ts",
+        "src/**/*.spec.?sx",
+        "src/**/*.test.?sx",
+        "src/**/*.stories.?sx",
+        "src/**/*.spec.?s",
+        "src/**/*.test.?s",
+        "src/**/*.stories.?s",
+    ]
+}

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index Page renders correctly 1`] = `
+<DocumentFragment>
+  <h1
+    class="text-gray-900 dark:text-white font-bold text-xl"
+    data-testid="main-heading-h1"
+  >
+    Hello World
+  </h1>
+</DocumentFragment>
+`;
