@@ -1,12 +1,19 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import MainHeading from './main-heading'
+import MainHeading, { type MainHeadingProps } from './main-heading'
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta = {
   title: 'Typography/MainHeading',
   component: MainHeading,
   tags: ['autodocs'],
-  argTypes: {},
+  argTypes: {
+    size: {
+      options: ['base', 'sm', 'md', 'lg', 'xl'] as MainHeadingProps['size'][],
+      control: {
+        type: 'select',
+      },
+    },
+  },
   args: {
     children: 'Main Heading',
   },

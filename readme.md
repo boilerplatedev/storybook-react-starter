@@ -45,6 +45,28 @@ The focus is on making sure the developer experience is the best while building 
 - To skip CI, add `skip ci` to commit message.
 - To skip release, add `skip release` to commit message.
 
+
+## Usage
+
+Once published to your private or public NPM, you can install and use this library in any React project.
+If you use TailwindCSS, use the `./src/tailwind.preset.ts` file to do all your customization. This file is used by both the library, the Storybook and is also exported for use in your project.
+
+In your `tailwind.config.ts` file, import the preset and use it as follows (just an example):
+
+```ts
+import { type Config } from 'tailwindcss'
+import tailwindPreset from '~/LIBRARY/tailwind.preset'
+
+export default {
+  ...,
+  presets: [
+    // Custom Tailwind Preset. This will be part of the exported package - which can then be easily imported into child projects
+    tailwindPreset,
+  ],
+  ...,
+} satisfies Config
+```
+
 ## Writing Tests
 
 - Visual Tests: https://storybook.js.org/docs/react/writing-tests/visual-testing
