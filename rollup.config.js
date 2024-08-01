@@ -6,7 +6,6 @@ import terser from '@rollup/plugin-terser'
 import analyze from 'rollup-plugin-analyzer'
 import copy from 'rollup-plugin-copy'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
-import sourceMaps from 'rollup-plugin-sourcemaps'
 import typescript from 'rollup-plugin-typescript2'
 import { visualizer } from 'rollup-plugin-visualizer'
 import postcss from 'rollup-plugin-postcss'
@@ -50,7 +49,6 @@ export default {
     replace({
       preventAssignment: true,
     }),
-    sourceMaps(),
     postcss({
       config: {
         path: './postcss.config.js',

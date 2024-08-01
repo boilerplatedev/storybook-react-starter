@@ -1,5 +1,5 @@
-import React, { type ReactNode } from 'react'
 import clsx from 'clsx'
+import React, { type ReactNode } from 'react'
 
 export interface MainHeadingProps {
   children: ReactNode
